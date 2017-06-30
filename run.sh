@@ -10,4 +10,4 @@ which librarian-puppet || {
   /opt/puppetlabs/puppet/bin/gem install  librarian-puppet
 }
 LIBRARIAN_PUPPET_PATH=/opt/puppetlabs/modules LIBRARIAN_PUPPET_TMP=/opt/puppetlabs/tmp /opt/puppetlabs/puppet/bin/librarian-puppet install --verbose
-puppet apply --modulepath /opt/puppetlabs/modules  init.pp
+/opt/puppetlabs/bin/puppet apply --modulepath /opt/puppetlabs/modules  init.pp
