@@ -4,6 +4,7 @@ OS_MAJ_VERSION=$(rpm -qa \*-release | grep -Ei "centos" | cut -d"-" -f3)
 yum install -y https://yum.puppetlabs.com/puppetlabs-release-pc1-el-"$OS_MAJ_VERSION".noarch.rpm
 yum install -y puppet git
 
+git clone https://github.com/andreyev/basic-elasticstack-puppet.git
 
 cd basic-elasticstack-puppet
 /opt/puppetlabs/puppet/bin/gem install  librarian-puppet
